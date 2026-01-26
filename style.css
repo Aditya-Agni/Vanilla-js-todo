@@ -15,7 +15,7 @@ main{
     background:#cfcece;
     padding:clamp(15px, 5vw, 40px);   /* padding:10px; */
     border-radius: 10px;
-    margin: 50px auto 0px;
+    margin: clamp(10px, 5vh, 50px) auto;
     width:clamp(0px, 98%, 540px)
 }
 
@@ -126,4 +126,5 @@ ul {
     color: white;
 
 }
+
 
