@@ -13,10 +13,10 @@ main{
     /* width: min(540px, 90%); */
     /* max-width: 40px; */
     background:#cfcece;
-    padding:50px 100px;    /* padding:10px; */
+    padding:clamp(15px, 5vw, 30px);   /* padding:10px; */
     border-radius: 10px;
     margin: 50px auto 0px;
-    width:clamp(300px, 55vw, 800px)
+    width:clamp(300px, 90%, 540px)
 }
 
 .inputtask{
@@ -31,7 +31,7 @@ main{
 }
 
 h1{
-    font-size: clamp(50px, 4vw, 200px);
+    font-size: clamp(35px, 4vw, 50px);
 }
 
 input{
@@ -124,4 +124,5 @@ ul {
 .clear-btn:hover {
     background: #0f376f;
     color: white;
+
 }
