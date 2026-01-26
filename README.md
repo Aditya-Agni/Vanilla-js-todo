@@ -57,3 +57,47 @@ Each task is stored as an object:
   text: String,
   completed: Boolean
 }
+```
+
+### Why localStorage was used
+
+`localStorage` is used to persist the application state across page reloads, simulating how real applications maintain continuity without a backend.
+
+Instead of treating the DOM as the source of truth, this project uses:
+
+- A JavaScript array (`tasks`) as the application state
+- `localStorage` as a persistence layer
+- The DOM purely as a rendered view
+
+On page load:
+- Stored tasks are retrieved from `localStorage`
+- The UI is rebuilt entirely from stored data
+- Completion state and task identity are preserved
+
+This reinforces the idea that **UI is derived from state**, not the other way around.
+
+---
+
+## Project Scope & Intentional Limitations
+
+This project intentionally avoids:
+- Frameworks (React, Vue, etc.)
+- External libraries
+- Backend services
+
+The focus is on **understanding core JavaScript behavior**:
+- How state changes trigger UI updates
+- How events flow through the DOM
+- How persistence works at a fundamental level
+
+The goal was not to build a feature-rich to-do app, but to build a **correct one**.
+
+---
+
+## Conclusion
+
+This project serves as a checkpoint for JavaScript fundamentals.
+
+By deliberately using JavaScript for interactions that could otherwise be handled by CSS, and by implementing explicit state management with `localStorage`, the project demonstrates a clear understanding of how interactive web applications work at a low level.
+
+It is meant to act as a strong foundation before moving on to more complex or framework-based applications.
