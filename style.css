@@ -1,0 +1,127 @@
+.toggle {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+body {
+    background: #011b40;
+    background: linear-gradient(90deg, rgba(1, 27, 64, 1) 0%, rgba(28, 94, 186, 1) 27%, rgba(4, 0, 120, 1) 73%, rgba(13, 95, 120, 1) 100%);
+    font-family:'poppins',sans-serif;
+}
+
+main{
+    /* width: min(540px, 90%); */
+    /* max-width: 40px; */
+    background:#cfcece;
+    padding:50px 100px;    /* padding:10px; */
+    border-radius: 10px;
+    margin: 50px auto 0px;
+    width:clamp(300px, 55vw, 800px)
+}
+
+.inputtask{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    margin-bottom:20px;
+    background:#8793b1;
+    /* padding:10px; */
+    border-radius: 30px;
+    width:100%;
+}
+
+h1{
+    font-size: clamp(50px, 4vw, 200px);
+}
+
+input{
+    border:none;
+    outline:none;
+    background:transparent;
+    flex:1; 
+    padding: 20px;
+}
+
+button{
+    border:none;
+    outline:none;
+    background: rgb(97, 13, 224);
+    /* height: 100%; */
+    margin:0px;
+    padding:20px 30px;
+    cursor:pointer;
+    font-size:16px;
+    border-radius:30px
+}
+
+.emptystate{
+    margin:35px 30px;
+    font-size: 20px;
+    font-weight: 600;
+    color:#011b40
+}
+.delete-btn{
+    background: #26374f;
+    padding:10px 15px;
+    margin-left: 20px;
+    color:rgba(226, 226, 226, 0.861);
+    flex-shrink:0;
+
+}
+
+/* .tasklist{
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: column; */
+/* } */
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* This pushes the button to the end */
+    width: 100%;
+    margin-bottom: 10px;
+    word-break: break-word; /* Forces long strings to wrap */
+    gap: 15px; /* Adds space between text and button */ 
+    cursor:pointer;
+    color:#030456
+}
+
+
+ul {
+    list-style: none; /* Removes the default dots */
+    padding: 0;       /* Removes the default left padding */
+}
+
+/* This targets the 'Box' we made in JS */
+.task-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1; /* This pushes the delete button to the very end */
+}
+
+/* This puts the dot inside the 'Box' on the left of the text */
+.task-content::before {
+    content: "•";
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.clear-btn {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    background: transparent;
+    border: 2px solid #0f376f;
+    color: #0f376f;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.clear-btn:hover {
+    background: #0f376f;
+    color: white;
+}
