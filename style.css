@@ -3,6 +3,12 @@
     opacity: 0.6;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
 body {
     background: #011b40;
     background: linear-gradient(90deg, rgba(1, 27, 64, 1) 0%, rgba(28, 94, 186, 1) 27%, rgba(4, 0, 120, 1) 73%, rgba(13, 95, 120, 1) 100%);
@@ -18,7 +24,7 @@ main{
     padding:clamp(15px, 5vw, 40px);   /* padding:10px; */
     border-radius: 10px;
     margin: clamp(10px, 5vh, 50px) auto;
-    width:clamp(0px, 98%, 540px)
+    width:clamp(0px, 96%, 540px)
 }
 
 .inputtask{
@@ -128,5 +134,6 @@ ul {
     color: white;
 
 }
+
 
 
