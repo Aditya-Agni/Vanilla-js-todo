@@ -84,7 +84,7 @@ li {
     gap: 15px; /* Adds space between text and button */ 
     cursor:pointer;
     color:black;
-    font-weigh:bold;
+    font-weight:bold;
 }
 
 
@@ -126,6 +126,7 @@ ul {
     color: white;
 
 }
+
 
 
 
