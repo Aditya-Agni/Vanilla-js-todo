@@ -92,7 +92,8 @@ li {
     word-break: break-word; /* Forces long strings to wrap */
     gap: 15px; /* Adds space between text and button */ 
     cursor:pointer;
-    color:#030456
+    color:black;
+    font-weigh:bold;
 }
 
 
@@ -134,6 +135,7 @@ ul {
     color: white;
 
 }
+
 
 
 
