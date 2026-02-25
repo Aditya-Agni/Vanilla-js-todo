@@ -16,7 +16,7 @@ function createtask(text, id, completed = false) {
     contentWrapper.appendChild(textSpan);
 
     let deletetask = document.createElement('button');
-    deletetask.textContent = 'Remove';
+    deletetask.textContent = '✖';
     deletetask.classList.add('delete-btn');
   
     newtask.appendChild(contentWrapper);
