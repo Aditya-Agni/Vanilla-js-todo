@@ -69,10 +69,10 @@ button{
     color:#011b40
 }
 .delete-btn{
-    background: #26374f;
+    background: #cfcece;
     padding:10px 15px;
     margin-left: 20px;
-    color:rgba(226, 226, 226, 0.861);
+    color:black;
     flex-shrink:0;
 
 }
@@ -134,6 +134,7 @@ ul {
     color: white;
 
 }
+
 
 
 
